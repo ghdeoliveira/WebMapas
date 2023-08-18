@@ -16,4 +16,4 @@ else {
     alert("Geolocalização não reconhecida.");
 }
 
-// Cordenadas Casa: -27.028797379424535, -48.659996588194424
+// Cordenadas Casa: -27.0283301, -48.6595561
