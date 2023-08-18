@@ -12,5 +12,6 @@ h3 {
 }
 
 iframe {
-    height: 800px;
+    width: max-content;
+    height: max-content;
 }
