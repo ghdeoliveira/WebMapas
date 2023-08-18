@@ -1,11 +1,12 @@
 /* BF7F6C, FFDDAE, B59D7B, 40372B, E6C79C */
 body {
     font-family: Verdana, Geneva, sans-serif;
+    font-weight: bold;
     color: #40372B;
-    background-color: #FFDDAE;
+    background-color: #f7f0b4;
 }
 
 h3 {
     font-family: Tahoma, Geneva, sans-serif;
-    color: #BF7F6C;
+    color: #202020;
 }
