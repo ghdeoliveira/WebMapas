@@ -10,24 +10,14 @@ LocationMaster.lookUpPosition = function(position)
 
 if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(LocationMaster.lookUpPosition);
+    navigator.geolocation.getCurrentPosition(showPosition);
 }
 else {
-    alert("Geolocalização não reconhecida.");
-}
-
-// Cordenadas Casa: -27.0283301, -48.6595561/
-
-var x = document.getElementById("demo");
-
-function getLocation() {
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(showPosition);
-  } else { 
-    x.innerHTML = "Geolocation is not supported by this browser.";
-  }
+    alert("Geolocalização não encontrada!");
 }
 
 function showPosition(position) {
-  x.innerHTML = "Latitude: " + position.coords.latitude + 
-  "<br>Longitude: " + position.coords.longitude;
-}
+    document.getElementById("demo").innerHTML = "Latitude: " + position.coords.latitude + 
+    "<br>Longitude: " + position.coords.longitude;
+  }
+// Coordenadas Casa: -27.0283301, -48.6595561/
