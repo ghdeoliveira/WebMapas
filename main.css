@@ -10,3 +10,7 @@ h3 {
     font-family: Tahoma, Geneva, sans-serif;
     color: #202020;
 }
+
+iframe {
+    min-height: 100%;
+}
