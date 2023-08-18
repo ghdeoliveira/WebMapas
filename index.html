@@ -1,0 +1,51 @@
+
+<html>
+	<head>
+	<link rel="stylesheet" href="./leaflet/leaflet.css" />
+	<script src="./leaflet/leaflet.js"></script>
+	<style type="text/css">
+		/* BF7F6C, FFDDAE, B59D7B, 40372B, E6C79C */
+		body {
+			font-family: Verdana, Geneva, sans-serif;
+			color: #40372B;
+			background-color: #FFDDAE;
+		}
+		
+		h3 {
+			font-family: Tahoma, Geneva, sans-serif;
+			color: #BF7F6C;
+		}
+	</style>
+	<script>
+		LocationMaster = new Object();
+		LocationMaster.lookUpPosition = function(position) 
+		{
+			this.latNow = position.coords.latitude;
+			this.longNow = position.coords.longitude;
+			
+			document.getElementById("mapHolder").src = "http://maps.google.com/maps?h1=en&ie=UTF8&11=" + this.latNow + "," + this.longNow + "&spn=0.054166,0.110378&z=13&output=embed";
+		}
+		
+		if (navigator.geolocation) {
+			navigator.geolocation.getCurrentPosition(LocationMaster.lookUpPosition);
+		}
+		else {
+			alert("Tente um browser HTML5 diferente. Este não está funcionando com geolocalização.");
+		}
+	</script>
+	<title> Mapa Mínimo </title>
+	</head>
+	<body>
+		<article>
+			<header>
+				<h3> Sua Localização </h3>
+			</header>
+			<section>
+				<iframe id="mapHolder"> </iframe>
+			</section>
+			<p> Este exemplo de uso de geolocalização e Google Maps é muito simples. Ele foi testado na maioria dos browsers. </p>
+		</article>
+	</body>
+</html>
+
+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
