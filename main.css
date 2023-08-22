@@ -10,3 +10,8 @@ h3 {
     font-family: Tahoma, Geneva, sans-serif;
     color: #202020;
 }
+
+#map {
+    height: 500px;
+    width: 100%;
+}
