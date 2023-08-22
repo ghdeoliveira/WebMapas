@@ -19,9 +19,3 @@ async function initMap() {
 }
 
 initMap();
-
-
-
-
-
-// AIzaSyAw0pg3jG7SRxHhMrDkxt6cj758KoPKsfw
